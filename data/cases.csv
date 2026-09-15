@@ -1,0 +1,6 @@
+id,symptom,show_output,expected_fault,osi_layer,concept,severity
+1,"PC gets IP but cannot reach server in VLAN 30","show ip route; show access-lists","Possible inter-VLAN routing or ACL issue","Layer 3/4","Routing/ACL","High"
+2,"Guest Wi-Fi can reach internal server","show access-lists; show vlan brief","Possible guest isolation failure","Layer 3/4","ACL/VLAN","High"
+3,"PC has no IP address","show ip dhcp binding; show interfaces","Possible DHCP or interface issue","Layer 2/3","DHCP","Medium"
+4,"Two devices report duplicate IP","show ip arp","Duplicate IP configuration","Layer 3","IP addressing","High"
+5,"Switch port is down","show interfaces status","Interface may be administratively down","Layer 1/2","Interface","Medium"
